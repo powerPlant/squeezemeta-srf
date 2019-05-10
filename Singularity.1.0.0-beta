@@ -39,3 +39,6 @@ if [ ! -f /media/db/.dmanifest ]; then
 else
   exec perl /opt/SqueezeMeta-1.0.0-beta/scripts/SqueezeMeta.pl "$@"
 fi
+
+%environment
+export LANG=C
